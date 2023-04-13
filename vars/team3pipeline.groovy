@@ -12,7 +12,7 @@ def call(String repoURL){
             sh '/var/lib/jenkins/script/project9grp5q1scrpit.sh'
           }
         }
-        stage('Pretei Lemo'){
+        stage('Pretei  Lemo'){
           when {
                 branch 'feature'
             }
