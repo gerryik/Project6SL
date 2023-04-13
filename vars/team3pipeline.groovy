@@ -5,33 +5,57 @@ def call(String repoURL){
     stage('project9'){
       parallel{
         stage('Gerald  Agbonye'){
-          when {
-                branch 'feature'
-            }
+when {
+                not {
+                    anyOf {
+                        branch 'master';
+                        branch 'develop';
+                        branch 'feature'
+                    }
+                }
+          }
           steps{
             sh '/var/lib/jenkins/script/project9grp5q1scrpit.sh'
           }
         }
         stage('Pretei  Lemo'){
-          when {
-                branch 'feature'
-            }
+when {
+                not {
+                    anyOf {
+                        branch 'master';
+                        branch 'develop';
+                        branch 'feature'
+                    }
+                }
+          }
           steps{
              sh '/var/lib/jenkins/script/lemorscript.sh'
           }
         }
    stage('Odile Domingo'){
-    when {
-           branch 'feature'
-            }
+when {
+                not {
+                    anyOf {
+                        branch 'master';
+                        branch 'develop';
+                        branch 'feature'
+                    }
+                }
+          }
        steps{
              sh '/var/lib/jenkins/script/odilescript.sh'
         }
     }
   stage('Le Pere'){
-    when {
-           branch 'feature'
-            }
+when {
+                not {
+                    anyOf {
+                        branch 'master';
+                        branch 'develop';
+                        branch 'feature'
+                    }
+                }
+          }
        steps{
             echo "TODO"
         }
@@ -46,14 +70,13 @@ def call(String repoURL){
         }
             stage("Other Members") {
         when {
-                not {
-                    anyOf {
+  
                         branch 'master';
                         branch 'develop';
                         branch 'feature'
-                    }
+ 
                 }
-          }
+ 
         steps{
                 echo "TODO"
         }
