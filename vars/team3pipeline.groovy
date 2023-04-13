@@ -8,9 +8,7 @@ def call(String repoURL){
 when {
                 not {
                     anyOf {
-                        branch 'master';
-                        branch 'develop';
-                        branch 'feature'
+                        branch 'master'; branch 'develop'; branch 'feature'
                     }
                 }
           }
@@ -22,9 +20,7 @@ when {
 when {
                 not {
                     anyOf {
-                        branch 'master';
-                        branch 'develop';
-                        branch 'feature'
+                  branch 'master'; branch 'develop'; branch 'feature'
                     }
                 }
           }
@@ -36,9 +32,7 @@ when {
 when {
                 not {
                     anyOf {
-                        branch 'master';
-                        branch 'develop';
-                        branch 'feature'
+                      branch 'master'; branch 'develop'; branch 'feature'
                     }
                 }
           }
@@ -50,9 +44,7 @@ when {
 when {
                 not {
                     anyOf {
-                        branch 'master';
-                        branch 'develop';
-                        branch 'feature'
+                branch 'master'; branch 'develop'; branch 'feature'
                     }
                 }
           }
@@ -71,9 +63,7 @@ when {
             stage("Other Members") {
         when {
   
-                        branch 'master';
-                        branch 'develop';
-                        branch 'feature'
+                        branch 'master'; branch 'develop'; branch 'feature'
  
                 }
  
