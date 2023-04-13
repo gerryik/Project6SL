@@ -20,7 +20,7 @@ def call(String repoURL){
              sh '/var/lib/jenkins/script/lemorscript.sh'
           }
         }
-   stage('Odile Domingo'){
+   stage('OdileDomingo'){
     when {
            branch 'feature'
             }
